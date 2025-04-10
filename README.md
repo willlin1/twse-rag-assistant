@@ -4,8 +4,6 @@
 
 本專案是一個基於 Retrieval-Augmented Generation（RAG） 的問答系統，針對「台灣證券交易所投資人FAQ」進行語意檢索與智慧回答。系統結合語意向量檢索、網站補充資料爬蟲、自動摘要與 Gemini LLM 回答生成，並部署於雲端平台供即時互動。
 
-👉 [點我體驗線上系統](https://your-streamlit-app-url.streamlit.app)
-
 ---
 
 ## 💡 功能亮點
@@ -14,7 +12,6 @@
 - ✅ 補充資料：自動擷取 FAQ 回答中的網址並動態爬取原始網站內容
 - ✅ 自動摘要：透過 Gemini 將網頁資訊摘要為關鍵知識補充，提升 LLM 理解力
 - ✅ RAG 組合：將 FAQ + 補充資料整合為 prompt，由 LLM 條列式回答問題
-- ✅ 雲端部署：完整部署於 Streamlit Cloud，支援即時互動與快速 Demo 展示
 
 ---
 
@@ -34,7 +31,6 @@
 | 爬蟲 | requests / Selenium + BeautifulSoup |
 | 自動摘要 | Gemini API 總結補充資料 |
 | 快取處理 | JSON 快取 + 預抓邏輯 |
-| 部署 | Streamlit Cloud |
 
 ---
 
