@@ -1,0 +1,6 @@
+# 忽略 API 金鑰、虛擬環境、快取檔
+.env
+__pycache__/
+url_cache.json
+venv/
+.ipynb_checkpoints/
