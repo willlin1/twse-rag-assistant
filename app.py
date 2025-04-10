@@ -10,10 +10,16 @@ import re
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
+import streamlit as st
 
-# 加載 .env
-load_dotenv()
-API_KEY = os.getenv("GEMINI_API_KEY")
+try:
+    API_KEY = st.secrets["GEMINI_API_KEY"]
+except:
+    from dotenv import load_dotenv
+    load_dotenv()
+    import os
+    API_KEY = os.getenv("GEMINI_API_KEY")
+
 
 # 載入 FAQ 資料
 df = pd.read_csv("twse.csv", encoding='utf-8-sig')
